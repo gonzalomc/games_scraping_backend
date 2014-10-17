@@ -18,4 +18,5 @@ class GameResource(ModelResource):
 		resource_name = 'games'
 		filtering = {
 			"name": ['startswith', 'endswith', 'contains', 'icontains'],
+			"store": ALL_WITH_RELATIONS
 		}
